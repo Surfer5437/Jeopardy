@@ -13,7 +13,7 @@ let diff5={};
 let subArray = [];
 randomCatId++;
 
-const catList = await axios.get(`http://jservice.io/api/category?id=${randomCatId}`);
+const catList = await axios.get(`https://jservice.io/api/category?id=${randomCatId}`);
 for (const question of catList.data.clues) {
     switch (question.value) {
         case 100:
